@@ -5,7 +5,7 @@ FROM public.ecr.aws/lambda/python:3.11
 
 RUN yum install -y vim
 # 必要なPythonライブラリをインストール
-RUN pip3 install openai
+RUN pip3 install openai requests_oauthlib
 
 # アプリケーションのソースコードをコンテナにコピー
 COPY . .
